@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title></title>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-5 col-md-8 mx-auto shadow border bg-white p-4 rounded">
+                <h2 class="text-center fw-bold mb-3">Contact Us</h2>
+                <form name="google-sheet">
+                    <div id="form_alerts"></div>
+
+                    <div class="form-group mb-3">
+                        <label for="uGuestRange" class="form-label">Guest Range</label>
+                        <select class="form-control" id="uGuestRange" name="uGuestRange"> 
+                  <option>Select Guest Range</option>              
+                  <option>10 - 100</option>
+                  <option>200 - 400</option>
+                  <option>500 - 700</option>
+                  <option>800 - 1000</option>
+                  <option>1000 - More</option>
+               </select>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="uTitle" class="form-label">Title</label>
+                 <select class="form-control" id="uTitle" name="uTitle">
+                  <option>Select the title</option>
+                  <option>Mr.</option>
+                  <option>Mrs.</option>
+               </select>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="uFirstName" class="form-label">First Name</label>
+                        <input type="text" id="uFirstName" name="uFirstName" class="form-control" placeholder="Enter your first name" required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="uLastName" class="form-label">Last Name</label>
+                        <input type="text" id="uLastName" name="uLastName" class="form-control" placeholder="Enter your last name" required>
+                    </div>
+
+
+                    <div class="form-group mb-3">
+                        <label for="uEmail" class="form-label">Email</label>
+                        <input type="email" id="uEmail" name="uEmail" class="form-control" placeholder="Enter your email address" required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="uPhoneNumber" class="form-label">Phone Number</label>
+                        <input type="number" id="uPhoneNumber" name="uPhoneNumber" class="form-control" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="uPlan" class="form-label">Select Plan</label>
+                 <select class="form-control" id="uPlan" name="uPlan">
+                  <option>Select the Plan</option>
+                  <option>Complete Wedding Planning</option>
+                  <option>Wedding Day Management (Wedding Day Coordination Services)</option>
+                  <option>Personalized Services</option>
+               </select>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-primary me-2" type="submit" id="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!--  <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzx29c5xuIFukzdcQQVywxKNqtKn-RW3MEMGiJVcvnMs4i9ZzOXroHyI2MMEDFygY79dg/exec'
+        const form = document.forms['google-sheet']
+        
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => $("#form_alerts").html("<div class='alert alert-success'>Your booking successfully submited.</div>"))
+            .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Error !!!</div>"))
+        })
+    </script>-->
+    <script src="test.js"></script>
+</body>
+</html>

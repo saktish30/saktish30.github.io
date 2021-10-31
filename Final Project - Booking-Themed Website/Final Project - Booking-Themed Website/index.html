@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Wedding GP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>GP MUTHU</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>Celebrating Your Life Moment & Dream Wedding With Us !</h2>
+                <p>Planning a wedding involves endless details, deadlines, family drama, and far too often enough stress to make you want to just elope. Use our planning checklist, read our budgeting tips, and access our wedding planner to help you pull it all together.</p>
+                <button type = "button" class = "head-btn" onclick="window.location.href='form.php' ">Book Now!!!</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#rooms">plans</a></li>
+                <li><a href = "#customers">customers</a></li>
+                <li><a href = "list.php">Booking List</a></li>
+            </ul>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h1>services</h1>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Wedding Planning</h2>
+                        <p>We are a team of passionate people that committed to meet the needs of every single couple through wedding planning and coordination. We will deliver our wedding services to you with good faith and sincerity, however big or grand, however small or intimate. Leave the planning to us and trust that we can transform your dream wedding into a reality.</p>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class="fab fa-centos"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Special Occasions</h2>
+                        <p>We can provide planning and coordination services for your special occasions ranging from birthday parties, marriage proposals, wedding anniversaries, bridal showers, baby full month party… you name i</p>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class="fas fa-puzzle-piece"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Event Styling</h2>
+                        <p>We create exquisite and bespoke decorations for all occasions, crafting timeless and unique designs specially for you. We work closely with some of the most established decorators of the country, to craft out your desired concept for your big day.</p>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                           <i class="fas fa-clock"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Saving you time and effort</h2>
+                        <p>Consider all the time you could spend sorting through individual wedding planners websites. Stop scrolling and searching! We are your one-stop shop for all your photography needs.</p>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Book Now">
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h1>plans</h1>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Complete Wedding Planning</h3>
+						<p>Planning</P>
+                        <li>Wedding Advisory</li>
+                        <li>Wedding Timeline Management</li>
+                        <li>Wedding Budget Management</li>
+                        <li>Venue Recommendation & Logistics Arrangements</li>
+                        <li>Food & Beverage Planning & Coordination</li>
+                        <li>Floor Plan Assistance</li>
+						<br></br>
+						<p>Coordination</P>
+                        <li>Wedding Advisory</li>
+                        <li>Wedding Timeline Management</li>
+                        <li>Wedding Budget Management</li>
+                        <li>Venue Recommendation & Logistics Arrangements</li>
+                        <li>Food & Beverage Planning & Coordination</li>
+                        <li>Floor Plan Assistance</li>
+						
+                        <p class = "rate">
+                            <span>$10000.00</span>
+                        </p>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Wedding Day Management (Wedding Day Coordination Services)</h3>
+                        <li>Wedding Details Finalization</li>
+                        <li>Itinerary Planning</li>
+                        <li>Wedding Flow and Agenda Coordination</li>
+                        <li>Bride & Groom, Family & Bridal Party Assistance</li>
+                        <li>4 Coordinators On Duty Up To 16 Hours</li>
+                        <li>Post Wedding Follow Up</li>
+                        <p class = "rate">
+                            <span>$15000.00</span> 
+                        </p>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Personalized Services</h3>
+                        <li>Event Styling, Theme Wedding Decoration</li>
+                        <li>Marriage Proposal Planning</li>
+                        <li>Baby Party Planning</li>
+                        <li>Honeymoon planning</li>
+                        <li>Assisting in hotel accommodation booking at preferred hotel, transportation and other personal arrangements</li>
+                        <li>Wedding party planning (hen party, bachelor party, bridal shower, rehearsal dinner and cocktails)</li>
+                        <p class = "rate">
+                            <span>$10000.00 - 20000.00</span>
+                        </p>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h3>customers</h3>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>We Loved it</h3>
+                        <p>Looking for a wedding planners when you are not based in the country can be difficult and a concern that the quality of photos is not quite what you want. Being able to search for a wedding planners based on expertise and viewing their work is very useful. We found Melanie and were not disappointed - Melanie was a true gem and became part of the team! Her photos are a work of art and have certainly added to our event</p>
+                        <img src = "images/cus1.jpg" alt = "customer image">
+                        <span>Yulia</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Comfortable</h3>
+                        <p>Both my husband and I had a very pleasant shoot with Elina for our pre wedding photos, and we enjoyed the experience with booking a photographer.com and Ania very much. Definitely, recommend this website for anyone who would like to find a local photographer in Amsterdam. I'm sure you will find the best here!</p>
+                        <img src = "images/cus2.jpg" alt = "customer image">
+                        <span>Tanja</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Nice Idea</h3>
+                        <p>I find the experience booking wedding planners through the site a pleasant and efficient one. There is a great choice of professional wedding plannerss and great support behind it. The results were fantastic. Thank you for all your help, would highly recommend to anyone</p>
+                        <img src = "images/cus3.jpg" alt = "customer image">
+                        <span>Johnson</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>Whether we daydreamed about an elegant, white ballgown or imagined a handsome groom waiting for us at the altar, we’ve all envisioned our day to be perfect. Let’s truly make your wedding day the best day of your life.</p>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Rooms</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            Number 6 Vivekanadar Theru, Dubai Kurukku Sandhu, Dubai Main Road, Dubai
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +84545 37534 48
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            info@domain.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
